@@ -84,52 +84,6 @@ class UserSeeder {
           },
         ],
       },
-      {
-        name: "Alfredo",
-        first_name: "Santiz",
-        last_name: "",
-        email: "alfredo_director@gmail.com",
-        password: "#Talent21",
-        role_id: directorRole.id,
-        coaches: [
-          {
-            name: "Armando",
-            first_name: "Glaizar",
-            last_name: "",
-            email: "armando_coach@gmail.com",
-            password: "#Talent21",
-            role_id: coachRole.id,
-            recruiters: [
-              {
-                name: "Paula",
-                first_name: "Ruiz",
-                last_name: "",
-                email: "paula_recruiter@gmail.com",
-                password: "#Talent21",
-                role_id: recruiterRole.id,
-              },
-            ],
-          },
-          {
-            name: "Salvador",
-            first_name: "S",
-            last_name: "",
-            email: " salvador_coach@gmail.com",
-            password: "#Talent21",
-            role_id: coachRole.id,
-            recruiters: [
-              {
-                name: "Brisa",
-                first_name: "Carreon",
-                last_name: "",
-                email: "brisa_recruiter@gmail.com",
-                password: "#Talent21",
-                role_id: recruiterRole.id,
-              },
-            ],
-          },
-        ],
-      },
     ];
   }
 

@@ -39,6 +39,14 @@ class Company extends Model {
     return query.whereIn("location_id", ids);
   }
 
+  getLongitude(longitude) {
+    return Number(longitude);
+  }
+
+  getLatitude(latitude) {
+    return Number(latitude);
+  }
+
   location() {
     return this.hasOne("App/Models/Location", "location_id", "id");
   }
