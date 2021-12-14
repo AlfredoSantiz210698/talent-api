@@ -48,7 +48,7 @@ class UserSeeder {
         coaches: [
           {
             name: "Mario",
-            first_name: "Mario",
+            first_name: "Moreno",
             last_name: "",
             email: "mario_coach@gmail.com",
             password: "#Talent21",
@@ -56,7 +56,7 @@ class UserSeeder {
             recruiters: [
               {
                 name: "Kevin",
-                first_name: "Kevin",
+                first_name: "Jhair",
                 last_name: "",
                 email: "kevin_recruiter@gmail.com",
                 password: "#Talent21",
@@ -66,7 +66,7 @@ class UserSeeder {
           },
           {
             name: "Emilio",
-            first_name: "Emilio",
+            first_name: "E",
             last_name: "",
             email: "emilio_coach@gmail.com",
             password: "#Talent21",
@@ -74,9 +74,55 @@ class UserSeeder {
             recruiters: [
               {
                 name: "Cris",
-                first_name: "Cris",
+                first_name: "Tovilla",
                 last_name: "",
                 email: "cris_recruiter@gmail.com",
+                password: "#Talent21",
+                role_id: recruiterRole.id,
+              },
+            ],
+          },
+        ],
+      },
+      {
+        name: "Alfredo",
+        first_name: "Santiz",
+        last_name: "",
+        email: "alfredo_director@gmail.com",
+        password: "#Talent21",
+        role_id: directorRole.id,
+        coaches: [
+          {
+            name: "Armando",
+            first_name: "Glaizar",
+            last_name: "",
+            email: "armando_coach@gmail.com",
+            password: "#Talent21",
+            role_id: coachRole.id,
+            recruiters: [
+              {
+                name: "Paula",
+                first_name: "Ruiz",
+                last_name: "",
+                email: "paula_recruiter@gmail.com",
+                password: "#Talent21",
+                role_id: recruiterRole.id,
+              },
+            ],
+          },
+          {
+            name: "Salvador",
+            first_name: "S",
+            last_name: "",
+            email: " salvador_coach@gmail.com",
+            password: "#Talent21",
+            role_id: coachRole.id,
+            recruiters: [
+              {
+                name: "Brisa",
+                first_name: "Carreon",
+                last_name: "",
+                email: "brisa_recruiter@gmail.com",
                 password: "#Talent21",
                 role_id: recruiterRole.id,
               },
