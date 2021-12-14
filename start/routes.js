@@ -34,28 +34,9 @@ Route.group(() => {
   });
 
   Route.post("/auth/signin", "AuthController.signIn").validator("Auth/signIn");
-  // Route.post("/auth/signup", "AuthController.signUp").validator("Auth/signUp");
-  // Route.post("/auth/signout", "AuthController.signOut");
 })
   .prefix("/api/v1/")
   .middleware(["forceJson"]);
-
-/*
-  |--------------------------------------------------------------------------
-  | Routes for root role.
-  |--------------------------------------------------------------------------
-  |
-  */
-// Route.group(() => {
-//   Route.resource("directors", "DirectorController")
-//     .only(["index", "store"])
-//     .validator(new Map([[["directors.store"], ["Director/Store"]]]));
-
-//   Route.resource("companies", "CompanyController").only(["index", "store"]);
-// })
-//   .prefix("/api/v1/root/")
-//   .middleware(["forceJson", "auth:jwt", `role:${Role.getRootCode()}`])
-//   .namespace("Root");
 
 /*
   |--------------------------------------------------------------------------

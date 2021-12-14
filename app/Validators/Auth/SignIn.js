@@ -2,7 +2,7 @@
 
 const ValidationFailureHandler = use("App/Validators/ValidationFailureHandler");
 
-class AuthSignIn extends ValidationFailureHandler {
+class SignIn extends ValidationFailureHandler {
   constructor() {
     super({ message: "There was a problem with authentication" });
   }
@@ -30,4 +30,4 @@ class AuthSignIn extends ValidationFailureHandler {
   }
 }
 
-module.exports = AuthSignIn;
+module.exports = SignIn;
