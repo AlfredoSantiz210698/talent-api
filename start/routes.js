@@ -33,7 +33,7 @@ Route.group(() => {
     return { gpac: "talent from api v1" };
   });
 
-  Route.post("/auth/signin", "AuthController.signIn").validator("Auth/signIn");
+  Route.post("/auth/signin", "AuthController.signIn").validator("Auth/SignIn");
 })
   .prefix("/api/v1/")
   .middleware(["forceJson"]);
