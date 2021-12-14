@@ -70,13 +70,21 @@ Route.group(() => {
 
 Route.group(() => {
   Route.resource("talents", "Talent/TalentController")
-    .only(["index", "show"])
-    .validator(new Map([[["talents.show"], ["Coach/Talent/Show"]]]));
+    .only(["index", "show", "destroy"])
+    .validator(
+      new Map([
+        [["talents.show"], ["Coach/Talent/Show"]],
+        [["talents.destroy"], ["Coach/Talent/Destroy"]],
+      ])
+    );
 
   Route.resource("talents.files", "Talent/FileController")
-    .only(["index"])
+    .only(["index", "destroy"])
     .validator(
-      new Map([[["talents.files.index"], ["Coach/Talent/File/Index"]]])
+      new Map([
+        [["talents.files.index"], ["Coach/Talent/File/Index"]],
+        [["talents.files.destroy"], ["Coach/Talent/File/Destroy"]],
+      ])
     );
 })
   .prefix("/api/v1/coaches/")
